@@ -1,4 +1,4 @@
-package com.inheritance.method_overriding;
+package com.inheritance.inheritance.method_overriding;
 
 public class BaseClass {
 
@@ -6,7 +6,7 @@ public class BaseClass {
 		System.out.println("Constructor of Parent");
 	}
 
-	void disp(){
+	public void disp(){
 		System.out.println("Parent Override Method");
 	}
 	

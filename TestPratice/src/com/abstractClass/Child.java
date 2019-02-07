@@ -28,16 +28,26 @@ public class Child extends AbstractParent {
 		 * here creating object of child but reference of Parent,
 		 * so can be able to call parent class method by using the inheritance concept
 		 */
-		/*AbstractParent obj = new Child();
+/*		AbstractParent obj = new Child();
 		obj.myAbstractMethod();
 		obj.abstractConcreteMetod();*/
 		//obj.childMethod();      // throwing compile time error because of inheritance concept, use below inheritance concept
 
-		Child obj = new Child();
+		/*Child obj = new Child();
 		obj.myAbstractMethod();
 		obj.abstractConcreteMetod();
 		obj.childMethod();
 		System.out.println("Parent Valrialbe : " + obj.str); //can access in child class, because of inheritance concept
+*/	
+		//using Abstract null reference
+		AbstractParent obj = null;
+		
+		Child child = new Child();
+		
+		obj = child;
+		
+		obj.abstractConcreteMetod();
+		obj.myAbstractMethod();
 	}
 
 }
