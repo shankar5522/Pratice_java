@@ -10,7 +10,7 @@ public abstract class AbstractParent {
 
 	final String str = "not allowed  abstract variable";
 
-	public AbstractParent() {
+	protected AbstractParent() {
 		// TODO Auto-generated constructor stub
 		System.out.println("Abstract Parent Class Constructor");
 	}
